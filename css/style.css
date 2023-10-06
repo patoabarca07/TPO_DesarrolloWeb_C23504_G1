@@ -56,8 +56,8 @@ header {
   background-image: url(./imagenes/principal.jpg);
   height: 45vh;
   background-size: center;
-  background-position: center;
-}
+  background-position:center;
+  
 
 .banner::before{
 
@@ -75,7 +75,7 @@ color: #026d73;
 height: 100%;
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: top;
 
 }
 .contenido-banner h3{
