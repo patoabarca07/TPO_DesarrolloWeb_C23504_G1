@@ -43,7 +43,7 @@ header {
 .menu a:hover,
 .mostrar-menu:hover,
 .esconder-menu:hover {
-  color: blue;
+  color: #194647;
 }
 
 #check {
@@ -51,13 +51,13 @@ header {
 }
 
 /*BANNER*/
-#banner {
+#banner{
   padding: 0 50px;
   background-image: url(./imagenes/princ\ 4.jpg);
   height: 60vh;
   background-size: center;
   background-position:center;
-  
+} 
 
 .banner::before{
 
@@ -83,8 +83,8 @@ justify-content: top;
   font-family: 'DM Serif Text', serif;
   color: rgb(2, 29, 30);
   font-size: 30px;
-  font font-weight: 400;
-  padding 10px 0px;
+  font-weight: 400;
+  padding: 10px 0px;
   text-shadow:3px 3px 3px #7feaee;
   display: flex;
   flex-direction: column;
@@ -96,10 +96,57 @@ justify-content: top;
   text-decoration: none;
   font-size: 25px;
   color: #133637;
-  text-shadow: 2px 2px 2px #50eaef ;
+  text-shadow: 2px 2px 2px #b1d6d7 ;
   border: 1px solid #194647;
   padding: 20px 40px;
   align-self: baseline;
+}
+.boton-empezar:hover{
+
+  background-color: #77bbbc;
+  transition: all 0.4s;
+}
+
+/*actividades*/
+
+#actividades {
+  background-color: #77bbbc;
+  padding: 50px 50px;
+  display: flex;
+  justify-content:space-around;
+  text-align: center;
+
+}
+
+#actividades img {
+
+  border-radius: 100%;
+  display: flex;
+
+}
+
+#actividades div{
+  padding: 30px 30px;
+}
+
+#actividades div h4{
+
+  font-size: 20px;
+  margin: 15px 0px;
+  color: #133637;
+}
+
+.boton-sabermas{
+display: inline-block;
+text-decoration: none;
+color: #133637;
+padding: 10px 30px;
+border: 3px solid #133637;
+border-radius: 30px;
+margin-top: 15px;
+transition: all 0.4s;
+
+
 }
 
 /*RESPONSIVE*/
@@ -134,4 +181,8 @@ justify-content: top;
   #check:checked ~ .menu {
     right: 0;
   }
-}
+  
+  #actividades{
+
+    flex-direction: column;
+  }
