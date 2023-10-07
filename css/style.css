@@ -53,8 +53,8 @@ header {
 /*BANNER*/
 #banner {
   padding: 0 50px;
-  background-image: url(./imagenes/principal.jpg);
-  height: 45vh;
+  background-image: url(./imagenes/princ\ 4.jpg);
+  height: 60vh;
   background-size: center;
   background-position:center;
   
@@ -71,7 +71,7 @@ header {
 .contenido-banner{
 
 position: relative;
-color: #026d73;
+color: #013b3e;
 height: 100%;
 display: flex;
 flex-direction: column;
@@ -80,19 +80,26 @@ justify-content: top;
 }
 .contenido-banner h3{
 
+  font-family: 'DM Serif Text', serif;
+  color: rgb(2, 29, 30);
   font-size: 30px;
   font font-weight: 400;
   padding 10px 0px;
-
+  text-shadow:3px 3px 3px #7feaee;
+  display: flex;
+  flex-direction: column;
 
 }
 
 .boton-empezar{
-
+  font-family: 'DM Serif Text', serif;
   text-decoration: none;
-  color: rgb(86, 174, 184);
+  font-size: 25px;
+  color: #133637;
+  text-shadow: 2px 2px 2px #50eaef ;
   border: 1px solid #194647;
   padding: 20px 40px;
+  align-self: baseline;
 }
 
 /*RESPONSIVE*/
