@@ -158,7 +158,29 @@ header {
   font-size: 15px;
   color: #9decf5;
 }
-
+#historia h3 {
+  font-size: 30px;
+  margin: 15px 0px;
+  margin-left: 100px;
+  color: #042a56;
+}
+.historiaClub {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row; /* Cambiado de column a row */
+}
+.historiaClub img {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.historiaClub p {
+  font-size: 22px;
+  color: #042a56;
+  text-align: justify;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
 /*RESPONSIVE*/
 
 @media (max-width: 768px) {
@@ -206,8 +228,8 @@ header {
     flex-direction: column;
   }
 
-  @media (max-width: 1200) {
+  /* @media (max-width: 1200) {
     *{
       width: 90%;
-    }
+    }*/
 }
