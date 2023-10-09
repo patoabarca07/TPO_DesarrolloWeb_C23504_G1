@@ -9,8 +9,7 @@
 
 /*HEADER*/
 header {
-  width: 100%;
-  height: 100px;
+  height: 150px;
   background-color: #17a9ed;
   padding: 0 50px;
   color: beige;
@@ -20,6 +19,7 @@ header {
 }
 
 .menu a {
+  font-size: 18px;
   color: antiquewhite;
   text-transform: uppercase;
   text-decoration: none;
@@ -69,13 +69,13 @@ header {
   justify-content: top;
 }
 
-.contenido-presentacion h3 {
+.contenido-presentacion h2 {
   font-family: "DM Serif Text", serif;
-  color: #022332;
+  color: #042a56;
   font-size: 30px;
   font-weight: 400;
   padding: 10px 0px;
-  text-shadow: 3px 3px 3px #7feaee;
+  text-shadow: 3px 3px 3px #76acd3;
   margin-left: 70px;
   margin-right: 90px;
 }
@@ -105,7 +105,7 @@ header {
 #actividades div h4 {
   font-size: 20px;
   margin: 15px 0px;
-  color: #133637;
+  color: #042a56;
 }
 
 .boton-sabermas {
@@ -129,6 +129,18 @@ header {
   text-align: center;
 }
 
+.cadanoticia img {
+  margin-top: 20px;
+}
+
+.cadanoticia h4 {
+  font-size: 20px;
+  margin: 15px 0px;
+  color: #042a56;
+}
+.cadanoticia p {
+  color: #042a56;
+}
 /*FOOTER*/
 
 #piePagina {
@@ -143,13 +155,13 @@ header {
 }
 #piePagina h4 {
   background-color: #17a9ed;
-  font-size: 20px;
-  color: #133637;
+  font-size: 15px;
+  color: #9decf5;
 }
 
 /*RESPONSIVE*/
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   /*HEADER*/
   .mostrar-menu,
   .esconder-menu {
@@ -193,4 +205,9 @@ header {
   #piePagina {
     flex-direction: column;
   }
+
+  @media (max-width: 1200) {
+    *{
+      width: 90%;
+    }
 }
