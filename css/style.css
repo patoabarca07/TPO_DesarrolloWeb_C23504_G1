@@ -183,7 +183,7 @@ header {
 }
 /*RESPONSIVE*/
 
-@media (max-width: 768px) {
+@media (max-width: 672px) {
   /*HEADER*/
   .mostrar-menu,
   .esconder-menu {
@@ -227,9 +227,4 @@ header {
   #piePagina {
     flex-direction: column;
   }
-
-  /* @media (max-width: 1200) {
-    *{
-      width: 90%;
-    }*/
 }
