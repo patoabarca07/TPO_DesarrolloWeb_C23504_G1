@@ -141,6 +141,121 @@ header {
 .cadanoticia p {
   color: #042a56;
 }
+
+/*CONTACTO HTML*/
+
+.contacto-mapa {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  text-align: center;
+}
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.logo {
+  text-align: center;
+  font-size: 3em;
+}
+
+.logo span {
+  color: #1b2ced;
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+}
+
+.contact-wrapper > * {
+  padding: 1em;
+}
+
+.contact-form {
+  background: #17a9ed;
+}
+.contact-form h3 {
+  font-size: 23px;
+  color: #031d3b;
+}
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+  display: block;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+  font-size: 20px;
+  color: #042a56;
+}
+
+.contact-form form .block {
+  grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #1b2ced;
+}
+
+.contact-form form button {
+  background: #1b2ced;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: #1b2ced;
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  background: #17a9ed;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+.contact-info p,
+.contact-info ul {
+  font-size: 20px;
+  color: #042a56;
+  background-color: #17a9ed;
+}
+
+.contact-info h4 {
+  font-size: 23px;
+  color: #031d3b;
+}
+
 /*FOOTER*/
 
 #piePagina {
@@ -183,7 +298,7 @@ header {
 }
 /*RESPONSIVE*/
 
-@media (max-width: 672px) {
+@media screen and (max-width: 672px) {
   /*HEADER*/
   .mostrar-menu,
   .esconder-menu {
@@ -215,6 +330,7 @@ header {
   }
 
   #presentacion {
+    width: 100%;
     flex-direction: column;
   }
   #actividades {
@@ -226,5 +342,24 @@ header {
   }
   #piePagina {
     flex-direction: column;
+  }
+}
+/* LARGE SIZE */
+@media (min-width: 700px) {
+  body {
+    padding: 0 4em;
+  }
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+    padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    text-align: left;
+    background-color: #17a9ed;
   }
 }
