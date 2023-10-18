@@ -19,6 +19,7 @@ header {
 }
 
 .menu a {
+  width: 100%;
   font-size: 18px;
   color: antiquewhite;
   text-transform: uppercase;
@@ -56,7 +57,7 @@ header {
   padding: 0 50px;
   height: 60vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
