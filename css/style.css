@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-/*RESET*/
+@import url("/css/actividadessociales.css");
 
+/*RESET*/
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +22,7 @@ header {
 
 .menu a {
   width: 100%;
-  font-size: 18px;
+  font-size: 22px;
   color: antiquewhite;
   text-transform: uppercase;
   text-decoration: none;
@@ -74,7 +75,7 @@ header {
 .contenido-presentacion h2 {
   font-family: "DM Serif Text", serif;
   color: #042a56;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 400;
   padding: 10px 0px;
   text-shadow: 3px 3px 3px #76acd3;
@@ -123,6 +124,7 @@ header {
 
 #noticias {
   margin-top: 20px;
+  margin-right: 20px;
   width: 100%;
   background-color: #6abbe0;
   padding: 50px 50px;
@@ -137,19 +139,17 @@ header {
 
 .cadanoticia h4 {
   font-size: 20px;
-  margin: 15px 0px;
+  margin: 15px 15px;
   color: #042a56;
 }
 .cadanoticia p {
+  font-size: 20px;
+  margin: 15px 15px;
   color: #042a56;
 }
 
 /*CONTACTO HTML*/
 
-.caja-contenedora {
-  display: flex;
-  justify-content: space-between;
-}
 .weather-content {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
@@ -232,13 +232,15 @@ form input[type="submit"]:hover {
 }
 
 .contacto-mapa {
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em;
   text-align: center;
+  background-color: #17a9ed;
 }
 .container {
-  max-width: 1170px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em;
@@ -350,7 +352,6 @@ ul {
   height: 100px;
   background-color: #17a9ed;
   margin-top: 15px;
-  padding: 0 50px;
   color: beige;
   display: flex;
   justify-content: space-around;
@@ -449,5 +450,110 @@ ul {
   .contact-info p {
     text-align: left;
     background-color: #17a9ed;
+  }
+}
+/*actividadessociales*/
+@charset "utf-8";
+/*css document*/
+
+.actividades-sociales p {
+  margin-top: 20px;
+  font-size: 25px;
+}
+.actividades-sociales h1 {
+  margin-top: 20px;
+}
+
+@keyframes alternate {
+  0% {
+    opacity: 20%;
+    transform: scale(1.6);
+  }
+}
+.titulo {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 50px;
+}
+.slider-box {
+  width: 90%;
+  height: 800px;
+  margin: 30px auto 0;
+  overflow: hidden;
+}
+.slider-box ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 12s infinite alternate ease-in-out;
+}
+.slider-box li {
+  width: 70%;
+  list-style: none;
+  position: relative;
+  background-color: #17a9ed;
+}
+.texto {
+  position: absolute;
+  text-align: center;
+  padding: 0 150px;
+  top: 500px;
+  color: black;
+}
+
+.texto p {
+  font-size: 25px;
+  text-align: center;
+}
+.slider-box img {
+  width: 60%;
+  height: 60%;
+}
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+@media (max-width: 991px) {
+  body {
+    padding: 30px;
+  }
+  .slider-box {
+    width: 100%;
+  }
+  .texto {
+    top: 50px;
+    padding: 0;
+  }
+  .texto h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+  .texto p {
+    font-size: 15px;
   }
 }
