@@ -387,7 +387,7 @@ ul {
 }
 /*RESPONSIVE*/
 
-@media screen and (max-width: 672px) {
+@media screen and (max-width: 700px) {
   /*HEADER*/
   .mostrar-menu,
   .esconder-menu {
@@ -433,8 +433,9 @@ ul {
     flex-direction: column;
   }
 }
+
 /* LARGE SIZE */
-@media (min-width: 700px) {
+@media (max-width: 700px) {
   body {
     padding: 0 4em;
   }
