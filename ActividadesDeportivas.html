@@ -102,6 +102,47 @@
  
 
 		</div>
+   <!-- </section>
+   <section> -->
+      <h1 id="title">Formulario de Inscripci&oacute;n Actividades Deportivas</h1>
+        <p id="description">Gracias por mostrarte interesado en formar parte de nuestro Club</p>
+        <form id="survey-form" method="post" action="">
+            <fieldset>
+                <label id="name-label" for="name">Nombre <input id="name" type="text" placeholder="Ingresa tu nombre" required/></label>
+                <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Ingresa tu email" required/></label>
+                <label id="phone-label" for="phone">Tel&eacute;fono <input id="phone" type="tel" placeholder="Ingresa tu tel&eacute;fono" required/></label>
+            </fieldset>
+            <fieldset>
+                <label>¿Recomendarias nuestro club a tus amigos o conocidos?</label>
+                <label for="definitely"><input id="definitely" type="radio" name="recommended" class="inline" value="Definitivamente"> Definitivamente</label>
+                <label for="maybe"><input id="maybe" type="radio" name="recommended" class="inline" value="Quizas"> Quizas</label>
+                <label for="not-sure"><input id="not-sure" type="radio" name="recommended" class="inline" value="No estoy seguro"> No estoy seguro</label>
+            </fieldset>
+            <fieldset>
+                <label for="feature">Preferencia de horario 
+                    <select id="feature" name="feature">
+                        <option value="">Selecciona una opci&oacute;n</option>
+                        <option value="1">Mañana</option>
+                        <option value="2">Tarde</option>
+                        <option value="3">Noche</option>
+                        <option value="4">Indistinto (Sin opci&oacute;n espec&iacute;fica)</option>
+                     </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>¿En que actividades está interesado? (Elija una o m&aacute;s actividades)</label>
+                <label><input type="checkbox" value="0" class="inline"> Futbol</label>
+                <label><input type="checkbox" value="1" class="inline"> Tenis</label>
+                <label><input type="checkbox" value="2" class="inline"> Hockey</label>
+                <label><input type="checkbox" value="3" class="inline"> Rugby</label>
+            </fieldset>
+            <fieldset>
+                <label for="comments">¿Alg&uacute;n comentario o sugerencia?
+                    <textarea id="comments" name="comments" rows="5" cols="35" placeholder="Ingrese su comentario aqu&iacute; porfavor..."></textarea>
+                </label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" />
+        </form>
    </section>
 
 </body>
