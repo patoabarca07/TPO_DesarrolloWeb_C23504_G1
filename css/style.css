@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("/css/actividadessociales.css");
 
+
+
 /*RESET*/
 * {
   margin: 0;
@@ -558,3 +560,166 @@ ul {
     font-size: 15px;
   }
 }
+
+/* ------------------------------------
+------------------------------------
+------------------------------------
+------------------------------------
+------------------------------------ */
+
+/*Actividades deportivas*/
+/* Section */
+section,
+.section {
+  padding: 80px 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Section title */
+.section-title {
+  position: relative;
+  margin-bottom: 70px;
+  line-height: 26px;
+  padding-bottom: 8px;
+}
+
+.section-title span {
+  font-weight: 400;
+}
+
+.section-title:before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: #ee3131;
+}
+
+
+/* Service */
+
+.service-content {
+  position: relative;
+  background: #f7f7f7;
+  padding: 0 30px 30px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.service-content h3,
+.service-content h3>a {
+  padding-top: 25px;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.service-content .service-img img {
+  width: 100%;
+}
+
+.readmore {
+  font-size: 14px;
+  color: #666666;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.readmore i {
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border: 1px solid #696969;
+  border-radius: 50%;
+  line-height: 16px;
+  margin-left: 6px;
+  font-size: 12px;
+}
+
+
+.ts-service-wrapper .service-img img {
+  width: 100%;
+}
+
+/* ------------------------------------
+------------------------------------
+------------------------------------
+------------------------------------
+------------------------------------ */
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+#survey-form  {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  background-color: #1b1b32a1;
+}
+
+fieldset {
+  border: none;
+  padding: 1rem 0;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 20px;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+      display: block;
+      width: 90%;
+      margin: 1em auto;
+      height: 2em;
+      font-size: 1.1rem;
+      background-color: #389b34;
+      border-color: white;
+      min-width: 300px;
+  } 
+
+/* ------------------------------------
+------------------------------------
+------------------------------------
+------------------------------------
+------------------------------------ */
